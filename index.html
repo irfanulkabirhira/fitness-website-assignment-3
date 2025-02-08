@@ -5,54 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Tailwind CSS installation -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/9c36c5aea5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body class="bg-[#111111FF]">
     <header class="bg-[#111111FF]">
       <nav class="flex justify-between w-11/12 mx-auto">
         <h1 class="font-bold text-3xl text-orange-500 italic">Fitness</h1>
-        <div class="space-x-6 p-4">
+        <div class="space-x-6 p-4 hidden lg:block">
           <a class="rounded-3xl font-bold p-2 bg-red-500 w-24" href="">Home</a>
           <a class="text-white" href="">Service</a>
           <a class="text-white" href="">Contact</a>
           <a class="text-white" href="">About</a>
         </div>
+        <span class="lg:hidden block"
+          ><i class="fa-solid fa-bars bg-gray-50"></i
+        ></span>
       </nav>
-      <section class="flex mx-12">
-        <dib class="space-x-40 mr-16 my-10">
-          <h1 class="font-bold text-white text-8xl">
-            Get body in<br /><i class="text-8xl text-white font-thin"
-              >shape</i>
-            & stay <br />healthy
+      <section class="flex flex-col lg:flex-row lg:mx-12 mx-3">
+        <div class="lg:space-x-40 lg:mr-16 lg:my-10 my-2">
+          <h1 class="font-bold text-white lg:text-6xl text-5xl ">Get body in<br/>
+            <i class="lg:text-6xl text-5xl text-white font-thin">shape</i>& stay<br/>healthy
           </h1>
-          <p class="text-xl text-[#FFFFFF80] my-11">
-            A huge selection of health and fitness content, healthy recipes
-            <br />and transformation stories to help you get fit and stay fit!
-          </p>
-          <button
-            class="bg-red-500 w-64 p-4 font-bold rounded-full text-2xl text-gray-50 mx-2"
-          >
-            Join Club Now!
-          </button>
-          <button
-            class="border border-white w-64 p-4 font-bold rounded-full text-2xl text-gray-50"
-          >
-            Download App
-          </button>
-        </dib>
-        <div class="relative mx-11 w-[375px] h-[650px]">
-          <dib><img src="./images/images/hero section.png" alt="" /></dib>
-          <div
-            class="bg-[#857f783d] p-4 rounded-lg w-44 absolute top-45 -right-20"
-          >
+          <p class="lg:text-xl text-xl text-[#FFFFFF80] lg:my-11 my-4">
+            A huge selection of health and fitness content,healthy recipes<br/>and transformation stories to help you get fit and stay fit!</p>
+          <button class="bg-red-500 lg:w-64 w-32 lg:p-4 font-bold rounded-full lg:text-2xl text-xl p-2 text-gray-50 mx-2">Join Club Now!</button>
+          <button class="border border-white lg:w-64 w-32 lg:p-4 font-bold rounded-full lg:text-2xl text-xl p-2 text-gray-50">Download App</button>
+        </div>
+        <div class="relative lg:mx-11 lg:w-[375px] lg:h-[650px]">
+          <div><img src="./images/images/hero section.png" alt="" /></div>
+          <div class="bg-[#857f783d] p-4 rounded-lg w-44 absolute top-45 lg:-right-20 -right-2">
             <h1 class="text-white font-bold text-3xl text-center">500+</h1>
-            <p class="text-[#FFFFFFA6] text-xs text-center">
-              Free Workout Videos
-            </p>
+            <p class="text-[#FFFFFFA6] text-xs text-center">Free Workout Videos</p>
           </div>
-          <div
-            class="flex justify-center bg-[#857f783d] p-4 rounded-lg w-48 absolute bottom-40 -left-35"
-          >
+          <div class="flex justify-center bg-[#857f783d] p-4 rounded-lg w-48 absolute lg:bottom-40 lg:-left-35 bottom-20 -left-5">
             <div class="w-6 h-6 bg-red-600 rounded-full my-4"></div>
             <div class="mx-1">
               <h1 class="text-white font-bold text-2xl">350+</h1>
@@ -143,13 +132,17 @@
           />
         </div>
       </section>
-      <section  class=" flex flex-col content-center items-center my-6">
+      <section class="flex flex-col content-center items-center my-6">
         <h1 class="text-5xl text-white font-bold my-4">BMI Calculator</h1>
-        <p class="text-[#FFFFFF80] text-xl">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+        <p class="text-[#FFFFFF80] text-xl">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or <br />
+          access to a gym.
+        </p>
       </section>
       <section class="flex justify-around bg-[#504b4b4a] my-6">
-        <div class="flex justify-center items-center rounded-xl  ">
-          <div class="text-center ">
+        <div class="flex justify-center items-center rounded-xl">
+          <div class="text-center">
             <h1 class="text-white text-2xl font-bold my-8">BMI Calculator</h1>
             <div class="rounded-lg border border-gray-700">
               <table class="w-full text-left border-collapse text-white">
@@ -182,9 +175,13 @@
           </div>
         </div>
 
-        <div class="flex justify-center items-center  bg-[#222222] rounded-3xl my-6">
+        <div
+          class="flex justify-center items-center bg-[#222222] rounded-3xl my-6"
+        >
           <div class="bg-[#7873735d] text-white p-8 rounded-lg w-full">
-            <h1 class="text-white text-center font-bold text-2xl my-4">Calculate your BMI</h1>
+            <h1 class="text-white text-center font-bold text-2xl my-4">
+              Calculate your BMI
+            </h1>
             <p class="text-[#FFFFFF80] my-3">
               We believe fitness should be accessible to everyone, everywhere,
               regardless of <br />
@@ -206,29 +203,47 @@
                 placeholder="Age"
                 class="p-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-gray-600"
               />
-              <select class="p-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-gray-600">
+              <select
+                class="p-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-gray-600"
+              >
                 <option>Sex</option>
                 <option>Male</option>
                 <option>Female</option>
               </select>
-              <select class="col-span-2 p-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-gray-600">
+              <select
+                class="col-span-2 p-3 bg-gray-800 text-white rounded-lg outline-none focus:ring-2 focus:ring-gray-600"
+              >
                 <option>Select an activity factor</option>
                 <option>Low Activity</option>
                 <option>Moderate Activity</option>
                 <option>High Activity</option>
               </select>
             </div>
-            <button class="w-56 mt-6 p-3 bg-red-500 text-white rounded-full font-bold mx-48">Calculate</button>
+            <button
+              class="w-56 mt-6 p-3 bg-red-500 text-white rounded-full font-bold mx-48"
+            >
+              Calculate
+            </button>
           </div>
         </div>
       </section>
       <section class="flex flex-col content-center items-center">
         <h1 class="text-white font-bold text-5xl my-4">Meet Our Team</h1>
-        <p class="text-[#FFFFFF80] text-xl text-center">We believe fitness should be accessible to everyone, everywhere, regardless of income or <br> access to a gym.</p>
+        <p class="text-[#FFFFFF80] text-xl text-center">
+          We believe fitness should be accessible to everyone, everywhere,
+          regardless of income or <br />
+          access to a gym.
+        </p>
         <div>
-          <div class="grid grid-cols-3 gap-3 my-6 p-3 rounded-2xl bg-[#FFFFFF1A] ">
+          <div
+            class="grid grid-cols-3 gap-3 my-6 p-3 rounded-2xl bg-[#FFFFFF1A]"
+          >
             <div class="relative">
-              <img class="w-80 h-68 p-3 rounded-3xl object-cover" src="./images/images/trainer1.png" alt="">
+              <img
+                class="w-80 h-68 p-3 rounded-3xl object-cover"
+                src="./images/images/trainer1.png"
+                alt=""
+              />
               <div class="absolute bottom-4 mx-4">
                 <h1 class="font-bold text-2xl text-white">Jerom Bell</h1>
                 <p class="text-xl text-[#FFFFFF80]">Trainer</p>
@@ -236,15 +251,25 @@
             </div>
 
             <div class="relative">
-              <img class="w-80 h-68 p-3 rounded-3xl object-cover" src="./images/images/trainer2.png" alt="">
+              <img
+                class="w-80 h-68 p-3 rounded-3xl object-cover"
+                src="./images/images/trainer2.png"
+                alt=""
+              />
               <div class="absolute bottom-4 mx-4">
-                <h1 class="font-bold text-2xl text-white">Cameron Williamson</h1>
+                <h1 class="font-bold text-2xl text-white">
+                  Cameron Williamson
+                </h1>
                 <p class="text-xl text-[#FFFFFF80]">Trainer</p>
               </div>
             </div>
 
             <div class="relative">
-              <img class="w-80 h-68 p-3 rounded-3xl object-cover" src="./images/images/trainer3.png" alt="">
+              <img
+                class="w-80 h-68 p-3 rounded-3xl object-cover"
+                src="./images/images/trainer3.png"
+                alt=""
+              />
               <div class="absolute bottom-4 mx-4">
                 <h1 class="font-bold text-2xl text-white">Darrell Stewared</h1>
                 <p class="text-xl text-[#FFFFFF80]">Trainer</p>
@@ -252,7 +277,11 @@
             </div>
 
             <div class="relative">
-              <img class="w-80 h-68 p-3 rounded-3xl object-cover" src="./images/images/trainer4.png" alt="">
+              <img
+                class="w-80 h-68 p-3 rounded-3xl object-cover"
+                src="./images/images/trainer4.png"
+                alt=""
+              />
               <div class="absolute bottom-4 mx-4">
                 <h1 class="font-bold text-2xl text-white">Denni Rsussell</h1>
                 <p class="text-xl text-[#FFFFFF80]">Trainer</p>
@@ -260,7 +289,11 @@
             </div>
 
             <div class="relative">
-              <img class="w-80 h-68 p-3 rounded-3xl object-cover" src="./images/images/trainer5.png" alt="">
+              <img
+                class="w-80 h-68 p-3 rounded-3xl object-cover"
+                src="./images/images/trainer5.png"
+                alt=""
+              />
               <div class="absolute bottom-4 mx-4">
                 <h1 class="font-bold text-2xl text-white">Cody Fisher</h1>
                 <p class="text-xl text-[#FFFFFF80]">Trainer</p>
@@ -268,7 +301,11 @@
             </div>
 
             <div class="relative">
-              <img class="w-80 h-68 p-3 rounded-3xl object-cover" src="./images/images/trainer6.png" alt="">
+              <img
+                class="w-80 h-68 p-3 rounded-3xl object-cover"
+                src="./images/images/trainer6.png"
+                alt=""
+              />
               <div class="absolute bottom-4 mx-4">
                 <h1 class="font-bold text-2xl text-white">Theresa Webb</h1>
                 <p class="text-xl text-[#FFFFFF80]">Trainer</p>
@@ -281,12 +318,13 @@
     <footer class="bg-[#FFFFFF1A] text-gray-300 py-10">
       <div class="w-11/12 mx-auto px-8">
         <div class="grid grid-cols-3 gap-8">
-
           <!-- Left Section -->
           <div>
             <h2 class="text-6xl font-bold italic text-orange-500">Fitness</h2>
             <p class="mt-4 text-gray-400">
-              We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.
+              We believe fitness should be accessible to everyone, everywhere,
+              regardless of income or access to a gym. With hundreds of
+              professional workouts.
             </p>
           </div>
 
@@ -296,7 +334,9 @@
             <ul class="mt-4 space-y-2">
               <li><a href="#" class="text-gray-400 text-xl">Service</a></li>
               <li><a href="#" class="text-gray-400 text-xl">Contact Us</a></li>
-              <li><a href="#" class="text-gray-400 text-xl">Affiliate Program</a></li>
+              <li>
+                <a href="#" class="text-gray-400 text-xl">Affiliate Program</a>
+              </li>
               <li><a href="#" class="text-gray-400 text-xl">About Us</a></li>
             </ul>
           </div>
@@ -307,18 +347,21 @@
             <ul class="mt-4 space-y-2">
               <li><a href="#" class="text-gray-400 text-xl">Fitness</a></li>
               <li><a href="#" class="text-gray-400 text-xl">Platform</a></li>
-              <li><a href="#" class="text-gray-400 text-xl">Workout Library</a></li>
+              <li>
+                <a href="#" class="text-gray-400 text-xl">Workout Library</a>
+              </li>
               <li><a href="#" class="text-gray-400 text-xl">App Design</a></li>
             </ul>
           </div>
         </div>
 
         <!-- Bottom Section -->
-        <div class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-400">
+        <div
+          class="mt-10 border-t border-gray-700 pt-6 text-center text-gray-400"
+        >
           <p>All rights reserved @Fitness 2024</p>
         </div>
       </div>
     </footer>
-
   </body>
 </html>
